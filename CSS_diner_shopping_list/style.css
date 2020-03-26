@@ -1,47 +1,67 @@
-
 *{
-    transition: all .1s ease-in;
-    }
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ header {
+ background-color: #4a4f56;
+ margin-left: 24px;
+ margin-right: 24px;
+  } 
+ 
 .title-header {
-    padding-top: 28px;
-    padding-bottom: 16px;
-    margin: 24px 24px 0px 24px;
-    font-size: 26px;
+    padding-top: 25px;
+    margin-bottom: 0px;
+
     }
 .subtitle-header {
-    margin: 0px 24px 0px 24px;
-    padding-bottom: 27px;
-    font-size: 17px;
-    
-    }
+    padding-bottom:25px ;
+    margin-top: 0px;
+    margin-bottom: 0px;;
+ 
+}
 .title-header, .subtitle-header {
-    font-family: Arial, Helvetica, sans-serif;
     color: #eb7e7f;
-    background-color: #4a4f56;
     text-align: center;
     }
 main {
+     margin: 0 24px 24px 24px;
     background-color: #3b3f45;
-    margin: 0px 24px 24px 24px;
-    padding-top: 40px;
-    padding-bottom: 100px;
-    }
+    margin-top: 0px;
+}
+    
 form {
-    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all .1s ease-in;
     }
 ul {
-    box-sizing: border-box;
-    margin:0px 196px 0px 196px;
     list-style-type: none;
-    padding: 0px;
+    margin-top: 0px;
+    padding: 0;
     }
+ul [type="checkbox"] {
+        vertical-align: middle;
+}
+    
 .coment {
-    font-size: 9px;
+    font-size: 16px;
+    }
+label {
+    box-sizing: border-box;
+        display: block;
     }
 li {
     background-color: #88839e;
-    box-sizing: border-box;
-    font-size: 17px;
     color: #f9f9ed;
     padding-top: 23px;
     padding-bottom: 23px;
@@ -49,20 +69,23 @@ li {
 li:nth-child(odd) {
     background-color: #7a7593;
     }
-footer {
-    margin:40px 196px 0px 196px;
+button {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    border: none;
     background-color: #4a4f56;
+    cursor: pointer;
     }
-.p-footer {
-    padding-top: 23px;
-    padding-bottom: 23px;
-    font-family: Arial, Helvetica, sans-serif;
+.button-1 {
     color: #eb7e7f;
-    font-size: 17px;
+    font-size: 25px;
     text-align: center;
 }    
 /*animation */
 ul>li:hover {
+    box-sizing: border-box;
     background-color: #625e77;
     border-top: 2px solid white;
     border-bottom: 2px solid white;

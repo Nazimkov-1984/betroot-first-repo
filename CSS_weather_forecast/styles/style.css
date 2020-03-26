@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans Unicode'; 
+     }
+body {
+    color: white;
+    background-color: darkolivegreen;
+}
+.main-title {
+        text-align: left;
+        font-size: 17px;
+        }
+.list-city {
+    margin-left: 14%;
+    margin-right: 14%;
+    display: inline-block;
+    transition: all .1s ease-in;
+    list-style-type: none;
+}
+
+li {
+    text-align: center;
+    border: 2px solid white;
+}
+.deg {
+border: 1px solid red;
+font-size: 14px;
+}
+.wi-icon, .wi-cels {
+    box-sizing: border-box;
+    border: 1px solid red;
+    width: 23px;
+    height: 23px;
+}
+}
+.final-text {
+    text-align: left;
+    font-size: 17px;
+   
+}
+
