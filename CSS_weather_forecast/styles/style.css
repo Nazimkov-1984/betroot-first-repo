@@ -5,38 +5,34 @@
      }
 body {
     color: white;
-    background-color: darkolivegreen;
+    background-color: #3399cc;
 }
+
 .main-title {
         text-align: left;
         font-size: 17px;
         }
 .list-city {
-    margin-left: 14%;
-    margin-right: 14%;
     display: inline-block;
     transition: all .1s ease-in;
     list-style-type: none;
 }
 
 li {
-    text-align: center;
     border: 2px solid white;
+    margin:0;
+    display: inline-block;
 }
 .deg {
-border: 1px solid red;
 font-size: 14px;
 }
-.wi-icon, .wi-cels {
-    box-sizing: border-box;
-    border: 1px solid red;
+.wi-icon {
+    vertical-align: middle;
     width: 23px;
     height: 23px;
 }
-}
 .final-text {
-    text-align: left;
     font-size: 17px;
-   
+    
 }
 
