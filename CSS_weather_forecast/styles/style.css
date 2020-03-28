@@ -10,13 +10,14 @@ body {
     height: 100%;
 }
 .content {
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: block;
     margin: 0 auto;
     width: 70%;
     }
 header {
-        margin-top: 20px;
-        margin-bottom: 20px;
+    margin-bottom: 20px;
         text-align: left;
         font-size: 25px;
 }
@@ -52,47 +53,47 @@ text-align: center;
     height: 23px;
 }
 /*СITY LIST */
-#Lisbon {
+.Lisbon {
     width: 50%;
     background-color: #3399cc;
 }
-#Paris {
+.Paris {
     width: 25%;
     background-color: #33cccc;
 }
-#Belgrade {
+.Belgrade {
     width: 25%;  
     background-color: #996699 ;
 }
-#Moskow {
+.Moskow {
     width: 25%;
     background-color: #c24747;
 }
-#Tel {
+.Tel {
     width: 25%;
     background-color: #e2674a;
 }
-#Cair {
+.Cair {
     width: 25%;
     background-color: #ffcc66;
 }
-#New {
+.New {
     width: 25%; 
     background-color: #99cc99; 
 }
-#NewD {
+.NewD {
     width: 25%;
     background-color: #669999;
 }
-#San {
+.San {
     width: 50%;
     background-color: #cc6699;
 }
-#Tokyo {
+.Tokyo {
     width: 25%;
     background-color: #339966;
 }
-#Sydney {
+.Sydney {
     width: 100%;  
     background-color: #666699;
 }
@@ -100,7 +101,6 @@ text-align: center;
 /* END СITY LIST */
 .final-text {
     margin-top: 20px;
-    margin-bottom: 20px;
     font-size: 17px;
    }
 /*animation*/
