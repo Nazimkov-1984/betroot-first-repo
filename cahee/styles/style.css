@@ -1,0 +1,99 @@
+    @font-face {
+    font-family: Miso; /* Имя шрифта */
+    src: url("/assets/fonts/miso.otf"); /* Путь к файлу со шрифтом */
+    }
+    @font-face {
+    font-family: Lato; /* Имя шрифта */
+    src: url("/assets/fonts/lato.ttf"); /* Путь к файлу со шрифтом */
+    }
+    @font-face {
+    font-family: Miso-Bold; /* Имя шрифта */
+    src: url("/assets/fonts/miso-bold.ttf"); /* Путь к файлу со шрифтом */
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 78px 0px 78px;
+    display: flex;
+    align-items: center;
+    background-color: #fdde7e;
+    font-size: 100%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-around;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+h1 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: #02995b;
+    font-family: Miso-Bold;
+    font-size: 47px;
+}
+.all-image-card {
+   text-align: center;
+}
+.image-cup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 77px;
+}
+div.gold {
+    background-image: url(/assets/images/cup-gold.png);
+}
+div.silver {
+    background-image: url(/assets/images/cup-silver.png);
+}
+div.bronze {
+    background-image: url(/assets/images/cup-bronze.png);
+}
+.img-bean {
+    margin-right: 15px;
+}
+h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Miso;
+    font-size: 35px;
+}
+h3 {
+    font-family: Lato;
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+.end-h {
+    padding-bottom: 37px;
+}
+.card {
+    border-top: 28px solid;
+    border-bottom: 28px solid;
+    border-top-color: #fdde7e ;
+    border-bottom-color: #fdde7e ;
+    flex-grow: 1;
+    margin-right: 27px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .1s ease-in;
+}
+.card:last-child {
+    margin-right: 0px;
+}
+/* animation */
+.card:hover {
+  border-color: white;
+}
+    
