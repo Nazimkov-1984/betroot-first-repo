@@ -1,14 +1,14 @@
     @font-face {
     font-family: Miso; /* Имя шрифта */
-    src: url("/assets/fonts/miso.otf"); /* Путь к файлу со шрифтом */
+    src: url("../assets/fonts/miso.otf"); /* Путь к файлу со шрифтом */
     }
     @font-face {
     font-family: Lato; /* Имя шрифта */
-    src: url("/assets/fonts/lato.ttf"); /* Путь к файлу со шрифтом */
+    src: url("../assets/fonts/lato.ttf"); /* Путь к файлу со шрифтом */
     }
     @font-face {
     font-family: Miso-Bold; /* Имя шрифта */
-    src: url("/assets/fonts/miso-bold.ttf"); /* Путь к файлу со шрифтом */
+    src: url("../assets/fonts/miso-bold.ttf"); /* Путь к файлу со шрифтом */
     }
 
 * {
@@ -50,13 +50,13 @@ h1 {
     height: 77px;
 }
 div.gold {
-    background-image: url(/assets/images/cup-gold.png);
+    background-image: url(../assets/images/cup-gold.png);
 }
 div.silver {
-    background-image: url(/assets/images/cup-silver.png);
+    background-image: url(../assets/images/cup-silver.png);
 }
 div.bronze {
-    background-image: url(/assets/images/cup-bronze.png);
+    background-image: url(../assets/images/cup-bronze.png);
 }
 .img-bean {
     margin-right: 15px;
