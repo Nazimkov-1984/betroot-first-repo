@@ -1,0 +1,8 @@
+@font-face {
+    font-family: HansKendrick-Regular; /* Имя шрифта */
+    src: url("../assets/fonts/HansKendrick-Regular.otf"); /* Путь к файлу со шрифтом */
+
+ } 
+ h3 {
+     font-family: HansKendrick-Regular;
+ } 
