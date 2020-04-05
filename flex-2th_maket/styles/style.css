@@ -3,6 +3,121 @@
     src: url("../assets/fonts/HansKendrick-Regular.otf"); /* Путь к файлу со шрифтом */
 
  } 
- h3 {
-     font-family: HansKendrick-Regular;
- } 
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+    
+}
+body {
+    min-height: 100vh;
+    text-transform: uppercase;
+    font-family: HansKendrick-Regular;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e7ec;
+}
+/* STYLE FONTS*/
+h2 {   
+    font-size: 30px;
+    color: #ffffff;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+h2:hover {
+    background-size: 100% 2px;
+}
+h4 {  
+    font-size: 13px;
+    color: #818181;
+    margin-bottom: 24px;
+}
+h3 {   
+    font-size: 22px;
+    color: black;
+    margin-bottom: 60px;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+h3:hover {
+    background-size: 100% 2px;
+}
+span {
+    font-size: 13px;
+    color: #99a5b0;
+}
+/* END STYLE FONTS*/
+.wrapper-cards {
+    margin-top: 90px;
+}
+img {
+    width: 100%;
+    display: block;
+}
+.post-line {
+    display: flex;
+}
+.post {
+    background-color: #ffffff;
+    margin-right: 20px;
+    width: 360px;
+    height: 540px;
+}
+.post:last-child {
+    margin-right: 0px;
+}
+.big-img {
+    margin-bottom: 0px;
+}
+.post-big {
+    position: relative;
+    width: 740px;
+    height: 540;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.main-img-cards {
+    width: 360px;
+    margin-bottom: 29px;
+}
+.foto-autor {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 25px;
+}
+a {
+    text-decoration: none;
+  }
+  
+.text-post {
+    padding-left: 28px;
+    padding-right: 28px;
+}
+.text-post-big {
+    position: absolute;
+    left: 44px;
+    top: 400px;
+    width: 420px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.footer-img {
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+}
