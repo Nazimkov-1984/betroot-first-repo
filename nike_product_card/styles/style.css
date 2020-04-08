@@ -1,0 +1,268 @@
+@font-face {
+    font-family: MuseoSasnsRounded100; /* Имя шрифта */
+    src: url("../assets/fonts/MuseoSansRounded100.ttf"); /* Путь к файлу со шрифтом */
+ } 
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #b9c3cf;
+}
+.wrapper {
+    background: url(../assets/img/bg-image.png) center no-repeat; 
+    background-size: cover;
+    padding: 110px 51px 100px 63px;
+    min-width: 800px;
+    min-height: 600px;
+}
+.all-card {
+    display: flex;
+    justify-content: space-between;
+    min-width: 686px;
+    min-height: 390px;
+    padding: 24px 55px 20px 21px;
+    background-color:  #111a28;
+    border-radius: 15px;
+}
+.left-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left-block__logo {
+    width: 65px;
+    height: 33px;
+    margin-bottom: 69px;
+    align-self: start;
+}
+.left-block__main-img {
+    width: 329px;
+    height: 159px;
+    align-self: start;
+    margin-bottom: 72px;
+    margin-left: 16px;
+}
+.left-block__radio-wrapper {
+    justify-content: center;
+}
+img {
+    display: block;
+    width: 100%;
+}
+/*CHECK COLOR*/
+.left-block__radio-wrapper {
+    display: flex;
+}
+.form_radio input[type=radio] {
+	display: none;
+}
+.form_radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+    user-select: none;
+}
+.form_radio label[for="radio-1"]:before { /*1*/
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: url(../assets/img/bul-dark.png) 0 0 no-repeat;
+}
+.form_radio label[for="radio-2"]:before { /*2*/
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: url(../assets/img/bul-white.png) 0 0 no-repeat;
+}
+.form_radio label[for="radio-3"]:before { /*3*/
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+    background: url(../assets/img/bul-red.png) 0 0 no-repeat;
+}
+.form_radio label[for="radio-4"]:before { /*4*/
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 0px;
+	bottom: 1px;
+	background: url(../assets/img/bul-cyan.png) 0 0 no-repeat;
+}
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+    border-radius: 50%;
+	border: 1px solid #7e838b;
+}
+ /* Hover */
+.form_radio label:hover:before {
+    filter: brightness(200%);
+}
+/* END CHECK COLOR*/
+
+/*RIGHT BLOCK*/
+.right-block {  
+    padding-left: 80px;
+    padding-top: 54px;
+    font-family: MuseoSasnsRounded100 ;
+}
+.main-title {
+    display: block;
+    color: #e1e1e1;
+    font-size: 34px;
+    margin-right: 32px;
+}
+.main-title-2 {
+    display: block;
+    color: #e1e1e1;
+    font-size: 34px;
+    margin-right: 32px;
+    margin-bottom: 16px;
+}
+.main-subtitle {
+    color:#49505a;
+    font-size: 17px;
+    margin-bottom: 24px;
+}
+
+ /*RATING DECORATION*/
+.stars {
+    width: 65px;
+    margin-bottom: 27px;
+}
+.list-star {
+    position: relative;
+    width: 65px;
+    list-style: none;
+    height: 12px;
+    background: url(../assets/img/star.png);
+}
+.list-star li {
+    float: left;
+    height: 12px;
+}
+.current {
+    z-index: 1;
+    background: url(../assets/img/star.png) left bottom ;
+    width: 20%;
+}
+.list-star li span[class*="star"] {
+    position: absolute;
+    z-index: 5;
+    display: block;
+    width: 13px;
+    height: 12px;
+    cursor: pointer;
+}
+.list-star li span[class*="star"]:hover {
+    z-index: 2;
+    left: 0;
+    background: url(../assets/img/star.png) left bottom ;
+}
+.list-star li span.star1 {
+    left: 0;
+}
+.list-star li span.star1:hover {
+    width: 13px;
+}
+.list-star li span.star2 {
+    left: 13px;
+}
+.list-star li span.star2:hover {
+    width: 26px;
+}
+.list-star li span.star3 {
+    left: 26px;
+}
+.list-star li span.star3:hover {
+    width: 39px;
+}
+.list-star li span.star4 {
+    left: 39px;
+}
+.list-star li span.star4:hover {
+    width: 52px;
+}
+.list-star li span.star5 {
+    left: 52px;
+}
+.list-star li span.star5:hover {
+    width: 65px;
+}
+/* END RATING DECORATION*/
+
+.select-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+    width: 142px; 
+}
+.select-wrapper {
+    position: relative;
+    min-width: 70px;
+    height: 32px;
+    overflow: hidden;
+    background: url(../assets/img/arrow.png) no-repeat;
+    background-position:70% 50% ;
+}
+.select-wrapper__select {
+    background: none; 
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-family: MuseoSasnsRounded100 ;
+    color: #4f5560;
+    border: 1px solid #4f5560; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 8px;
+}
+.select-wrapper__select:hover{
+    cursor: pointer;
+    border: 1px solid #e1e1e1 ;
+    transition: 0.1s ease-in;
+}
+option {
+    color:black;
+    background:  #49505a;
+}
+.all-card__button {
+    min-width: 184px;
+    min-height: 40px;
+    background-color: #202835;
+    padding-left: 54px;
+    padding-right: 60px;
+    display: block;
+    font-family: MuseoSasnsRounded100 ;
+    color: #8c9095;
+    border: 1px solid #4f5560;
+}
+.all-card__button:hover {
+    cursor: pointer;
+    border: 1px solid #e1e1e1 ;
+    transition: 0.1s ease-in;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike product card</title>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABERERERERERERERERERERERERERERERERERERERERERERAAAREREREREBEQARERERERERERAREREREREREREREREREREREREREREREREREREREREREREREAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="all-card">
+            <div class="left-block"> <!--LEFT BLOCK-->
+                <div class="left-block__logo"><img src="./assets/img/logo.png" alt="Nike logo"></div>
+                <div class="left-block__main-img"><img src="./assets/img/krossovok.png" alt="Shoes"></div>
+             <!--CHECK COLOR-->
+            <div class="left-block__radio-wrapper">
+                <div class="form_radio">
+                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                <label for="radio-1"></label>
+            </div>
+         
+            <div class="form_radio">
+                <input id="radio-2" type="radio" name="radio" value="2">
+                <label for="radio-2"></label>
+            </div>
+         
+            <div class="form_radio">
+                <input id="radio-3" type="radio" name="radio" value="3">
+            <label for="radio-3"></label></label>
+            </div>
+         
+            <div class="form_radio">
+                <input id="radio-4" type="radio" name="radio" value="4">
+                <label for="radio-4"></label>
+            </div>
+            <!--END CHECK COLOR-->
+
+            </div>
+        </div> 
+            <div class="right-block"><!--RIGHT BLOCK-->
+                <div>
+                    <h2 class="main-title">Nike SB Stefan</h2>
+                    <h2 class="main-title-2">Janoski Max</h2>
+                    <p class="main-subtitle">Unisex Skateboarding Shoe</p>
+                </div>
+            <!--STARS -->
+                <div class="stars">
+                    <ul class="list-star">
+                        <li class="current"><span class="star1"></span></li>
+                        <li class="current"><span class="star2"></span></li>
+                        <li class="current"><span class="star3"></span></li>
+                        <li><span class="star4"></span></li>
+                        <li><span class="star5"></span></li>
+                    </ul>
+                </div> <!-- END STARS -->  
+            <form action="#">
+                <div class="select-block">
+                    <div class="select-wrapper">
+                        <select class="select-wrapper__select" name="Size">
+                                <option value="SIZE">Size</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                        </select>
+                    </div>
+                    <div class="select-wrapper">
+                    <select class="select-wrapper__select" name="">
+                        <option value="Qty">Qty</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option> 
+                    </select>
+                    </div>
+                </div>
+            </form>
+                <button class="all-card__button"> Add to cart</button>
+        </div>
+    </div>
+<!--java script-->
+        <script src="./js/script.js"></script>   
+</div>   
+</body>
+</html>
