@@ -57,8 +57,8 @@ span {
     color: #99a5b0;
 }
 /* END STYLE FONTS*/
-.wrapper-cards {
-    margin-top: 90px;
+body{
+    padding-top: 90px;
 }
 img {
     width: 100%;
@@ -82,7 +82,7 @@ img {
 .post-big {
     position: relative;
     width: 740px;
-    height: 540;
+    height:540px;
     margin-bottom: 20px;
     margin-right: 20px;
 }
@@ -113,8 +113,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
 .footer-img {
     width: 28px;
