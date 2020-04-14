@@ -10,8 +10,8 @@
 }
 body {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
     background-color: #b9c3cf;
 }
@@ -24,41 +24,61 @@ body {
 }
 .all-card {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     min-width: 686px;
     min-height: 390px;
     padding: 24px 55px 20px 21px;
     background-color:  #111a28;
     border-radius: 15px;
 }
-.left-block {
+.up-block {
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-.left-block__logo {
+.up-block__logo {
     width: 65px;
     height: 33px;
     margin-bottom: 69px;
     align-self: start;
 }
-.left-block__main-img {
+.up-block__main-img {
+    display: block;
+    width: 100%;
     width: 329px;
     height: 159px;
     align-self: start;
+    margin-top: 68px;
     margin-bottom: 72px;
     margin-left: 16px;
 }
-.left-block__radio-wrapper {
-    justify-content: center;
+.wrap_text {
+    padding-left: 80px;
 }
-img {
+.main-title {
     display: block;
-    width: 100%;
+    color: #e1e1e1;
+    font-size: 18px;
+    padding-right: 32px;
+    padding-top: 54px;
 }
+.main-title-2 {
+    display: block;
+    color: #e1e1e1;
+    font-size: 18px;
+    padding-right: 32px;
+    margin-bottom: 16px;
+}
+.main-subtitle {
+    color:#49505a;
+    font-size: 10px;
+}
+
 /*CHECK COLOR*/
-.left-block__radio-wrapper {
+.down-block{
     display: flex;
+}
+.down-block__radio-wrapper {
+    display: flex;
+    margin-left: 80px;
 }
 .form_radio input[type=radio] {
 	display: none;
@@ -67,54 +87,53 @@ img {
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
-	padding-left: 25px;
-	margin-right: 0;
-    user-select: none;
-}
+    padding-left: 25px; /*distanse between circle*/
+	/*margin-right: 0;*/
+} 
 .form_radio label[for="radio-1"]:before { /*1*/
 	content: "";
-	display: inline-block;
-	width: 17px;
+	display:block;
+	width: 18px;
 	height: 18px;
 	position: absolute;
-	left: 0;
-	bottom: 1px;
-	background: url(../assets/img/bul-dark.png) 0 0 no-repeat;
+    left: 0px;
+    bottom: 1px;
+	background: url(../assets/img/bul-dark.png) 50% 50% no-repeat;
 }
 .form_radio label[for="radio-2"]:before { /*2*/
 	content: "";
-	display: inline-block;
-	width: 17px;
+	display:block;
+	width: 18px;
 	height: 18px;
 	position: absolute;
 	left: 0;
 	bottom: 1px;
-	background: url(../assets/img/bul-white.png) 0 0 no-repeat;
+	background: url(../assets/img/bul-white.png) 50% 50% no-repeat;
 }
 .form_radio label[for="radio-3"]:before { /*3*/
 	content: "";
 	display: inline-block;
-	width: 17px;
-	height: 18px;
-	position: absolute;
+	width: 18px;
+	height: 18px; 
+	position: absolute; 
 	left: 0;
 	bottom: 1px;
-    background: url(../assets/img/bul-red.png) 0 0 no-repeat;
+    background: url(../assets/img/bul-red.png) 50% 50% no-repeat;
 }
 .form_radio label[for="radio-4"]:before { /*4*/
 	content: "";
 	display: inline-block;
-	width: 17px;
+	width: 18px;
 	height: 18px;
 	position: absolute;
 	left: 0px;
 	bottom: 1px;
-	background: url(../assets/img/bul-cyan.png) 0 0 no-repeat;
+	background: url(../assets/img/bul-cyan.png) 50% 50% no-repeat;
 }
 /* Checked */
 .form_radio input[type=radio]:checked + label:before {
+    border: 1px solid white;
     border-radius: 50%;
-	border: 1px solid #7e838b;
 }
  /* Hover */
 .form_radio label:hover:before {
@@ -123,34 +142,20 @@ img {
 /* END CHECK COLOR*/
 
 /*RIGHT BLOCK*/
-.right-block {  
+.down-block {  
+    position: relative;
     padding-left: 80px;
-    padding-top: 54px;
     font-family: MuseoSasnsRounded100 ;
 }
-.main-title {
-    display: block;
-    color: #e1e1e1;
-    font-size: 34px;
-    margin-right: 32px;
+.wrap_left {
+    position: absolute;
+    left: 425px;
+    top: -186px;
 }
-.main-title-2 {
-    display: block;
-    color: #e1e1e1;
-    font-size: 34px;
-    margin-right: 32px;
-    margin-bottom: 16px;
-}
-.main-subtitle {
-    color:#49505a;
-    font-size: 17px;
-    margin-bottom: 24px;
-}
-
  /*RATING DECORATION*/
 .stars {
     width: 65px;
-    margin-bottom: 27px;
+    padding-bottom: 26px;
 }
 .list-star {
     position: relative;
@@ -216,8 +221,8 @@ img {
 .select-block {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 42px;
     width: 142px; 
+    padding-bottom: 29px;
 }
 .select-wrapper {
     position: relative;
@@ -232,7 +237,7 @@ img {
     display: block;
     width: 100%;
     height: 100%;
-    font-size: 15px;
+    font-size: 10px;
     font-family: MuseoSasnsRounded100 ;
     color: #4f5560;
     border: 1px solid #4f5560; 
@@ -250,18 +255,17 @@ option {
     color:black;
     background:  #49505a;
 }
-.all-card__button {
+.down-block__button {
     min-width: 184px;
     min-height: 40px;
     background-color: #202835;
-    padding-left: 54px;
-    padding-right: 60px;
     display: block;
+    font-size: 10px;
     font-family: MuseoSasnsRounded100 ;
     color: #8c9095;
     border: 1px solid #4f5560;
 }
-.all-card__button:hover {
+.down-block__button:hover {
     cursor: pointer;
     border: 1px solid #e1e1e1 ;
     transition: 0.1s ease-in;
