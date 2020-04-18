@@ -10,58 +10,56 @@
 <body>
     <div class="wrapper">
         <div class="all-card">
-            <!--UP BLOCK-->
-            <div class="up-block"> 
+            <!--LEFT BLOCK-->
+            <div class="left-block"> 
                 <div class="wrap_image">
-                    <div class="up-block__logo"><img src="./assets/img/logo.png" alt="Nike logo"></div>
-                    <div class="up-block__main-img"><img src="./assets/img/krossovok.png" alt="Shoes"></div>
+                    <div class="left-block__logo"><img src="./assets/img/logo.png" alt="Nike logo"></div>
+                    <div class="left-block__main-img"><img src="./assets/img/krossovok.png" alt="Shoes"></div>
                 </div>
-                <div class="wrap_text">
-                    <h2 class="main-title">Nike SB Stefan</h2>
-                    <h2 class="main-title-2">Janoski Max</h2>
-                    <p class="main-subtitle">Unisex Skateboarding Shoe</p>
-                </div>
-            </div>  
-            <!--END UP BLOCK-->
-                
-           <!--DOWN BLOCK (FORM)-->
-           <div class="down-block"> 
-            <form action="#">
                  <!--CHECK COLOR-->
-                <div class="down-block__radio-wrapper">
+                 <div class="left-block__radio-wrapper">
                     <div class="form_radio">
-                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                    <input id="radio-1" type="radio" name="radio" value="1" form="main-form" checked>
                     <label for="radio-1"></label>
                     </div>
          
                     <div class="form_radio">
-                    <input id="radio-2" type="radio" name="radio" value="2">
+                    <input id="radio-2" type="radio" name="radio" value="2" form="main-form">
                     <label for="radio-2"></label>
                     </div>
          
                     <div class="form_radio">
-                    <input id="radio-3" type="radio" name="radio" value="3">
+                    <input id="radio-3" type="radio" name="radio" value="3" form="main-form">
                     <label for="radio-3"></label></label>
                     </div>
          
                     <div class="form_radio">
-                    <input id="radio-4" type="radio" name="radio" value="4">
+                    <input id="radio-4" type="radio" name="radio" value="4" form="main-form">
                     <label for="radio-4"></label>
                     </div>
-                </div>    
-            <!--END CHECK COLOR-->
-            <div class="wrap_left">
+                </div><!--END CHECK COLOR-->
+            </div> <!--END LEFT BLOCK-->
+                
+           <!--RIGHT BLOCK -->
+            <div class="right-block"> 
+               <!--TEXT BLOCK-->
+               <div class="wrap_text">
+                <h2 class="main-title">Nike SB Stefan</h2>
+                <h2 class="main-title-2">Janoski Max</h2>
+                <p class="main-subtitle">Unisex Skateboarding Shoe</p>
+                </div> <!--END TEXT BLOCK-->
+                <form action="#" id="main-form">
                 <!--STARS -->
-                <div class="stars">
-                    <ul class="list-star">
-                        <li class="current"><span class="star1"></span></li>
-                        <li class="current"><span class="star2"></span></li>
-                        <li class="current"><span class="star3"></span></li>
-                        <li><span class="star4"></span></li>
-                        <li><span class="star5"></span></li>
-                    </ul>
-                </div> <!-- END STARS -->  
-                <div class="select-block">
+                    <div class="stars">
+                        <ul class="list-star">
+                            <li class="current"><span class="star1"></span></li>
+                            <li class="current"><span class="star2"></span></li>
+                            <li class="current"><span class="star3"></span></li>
+                            <li><span class="star4"></span></li>
+                            <li><span class="star5"></span></li>
+                        </ul>
+                    </div> <!-- END STARS -->  
+                    <div class="select-block">
                         <div class="select-wrapper">
                             <select class="select-wrapper__select" name="Size">
                                 <option value="SIZE">Size</option>
@@ -80,14 +78,11 @@
                             <option value="4">4</option> 
                             </select>
                         </div>
-                </div>
-                <button class="down-block__button"> Add to cart</button>
-            </div>        
-
-
-            </form>
+                    </div>
+                    <button class="right-block__button"> Add to cart</button>       
+                </form>
             </div>
-             <!--  END DOWN BLOCK (FORM)-->   
+             <!--  END RIGHT BLOCK -->   
         </div>
     </div>
 <!--java script-->

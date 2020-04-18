@@ -3,8 +3,8 @@
     src: url("../assets/fonts/MuseoSansRounded100.ttf"); /* Путь к файлу со шрифтом */
  } 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-size: 100%;
     box-sizing: border-box;
 }
@@ -24,23 +24,24 @@ body {
 }
 .all-card {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     min-width: 686px;
     min-height: 390px;
     padding: 24px 55px 20px 21px;
     background-color:  #111a28;
     border-radius: 15px;
 }
-.up-block {
+.left-block {
     display: flex;
+    flex-direction: column;
 }
-.up-block__logo {
+.left-block__logo {
     width: 65px;
     height: 33px;
     margin-bottom: 69px;
     align-self: start;
 }
-.up-block__main-img {
+.left-block__main-img {
     display: block;
     width: 100%;
     width: 329px;
@@ -50,35 +51,10 @@ body {
     margin-bottom: 72px;
     margin-left: 16px;
 }
-.wrap_text {
-    padding-left: 80px;
-}
-.main-title {
-    display: block;
-    color: #e1e1e1;
-    font-size: 18px;
-    padding-right: 32px;
-    padding-top: 54px;
-}
-.main-title-2 {
-    display: block;
-    color: #e1e1e1;
-    font-size: 18px;
-    padding-right: 32px;
-    margin-bottom: 16px;
-}
-.main-subtitle {
-    color:#49505a;
-    font-size: 10px;
-}
-
 /*CHECK COLOR*/
-.down-block{
+.left-block__radio-wrapper {
     display: flex;
-}
-.down-block__radio-wrapper {
-    display: flex;
-    margin-left: 80px;
+    justify-content: center;
 }
 .form_radio input[type=radio] {
 	display: none;
@@ -132,7 +108,7 @@ body {
 }
 /* Checked */
 .form_radio input[type=radio]:checked + label:before {
-    border: 1px solid white;
+    border: .5px solid white;
     border-radius: 50%;
 }
  /* Hover */
@@ -142,20 +118,37 @@ body {
 /* END CHECK COLOR*/
 
 /*RIGHT BLOCK*/
-.down-block {  
+.right-block {
     position: relative;
     padding-left: 80px;
     font-family: MuseoSasnsRounded100 ;
 }
-.wrap_left {
-    position: absolute;
-    left: 425px;
-    top: -186px;
+/*TEXT STYLES*/
+.wrap-text {
+  padding-right: 32px;
 }
- /*RATING DECORATION*/
+.main-title {
+    display: block;
+    color: #e1e1e1;
+    font-size: 18px;
+    padding-top: 54px;
+}
+.main-title-2 {
+    display: block;
+    color: #e1e1e1;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.main-subtitle {
+    color:#49505a;
+    font-size: 10px;
+} /*END TEXT STYLES*/
+
+ /*STARS DECORATION*/
 .stars {
     width: 65px;
     padding-bottom: 26px;
+    padding-top: 26px;
 }
 .list-star {
     position: relative;
@@ -215,8 +208,7 @@ body {
 }
 .list-star li span.star5:hover {
     width: 65px;
-}
-/* END RATING DECORATION*/
+}/* END STARS DECORATION*/
 
 .select-block {
     display: flex;
@@ -249,13 +241,13 @@ body {
 .select-wrapper__select:hover{
     cursor: pointer;
     border: 1px solid #e1e1e1 ;
-    transition: 0.1s ease-in;
+    transition: 0.5s ease-in;
 }
 option {
     color:black;
     background:  #49505a;
 }
-.down-block__button {
+.right-block__button {
     min-width: 184px;
     min-height: 40px;
     background-color: #202835;
@@ -265,8 +257,8 @@ option {
     color: #8c9095;
     border: 1px solid #4f5560;
 }
-.down-block__button:hover {
+.right-block__button:hover {
     cursor: pointer;
     border: 1px solid #e1e1e1 ;
-    transition: 0.1s ease-in;
+    transition: 0.5s ease-in;
 }
