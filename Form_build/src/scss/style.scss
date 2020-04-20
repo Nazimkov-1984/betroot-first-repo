@@ -1,0 +1,192 @@
+@import "vars";
+@import "mixins";
+@import "common";
+
+body {
+    padding: 50px 200px 50px 200px;
+    @include Border_solid;
+    @include Flex_center;
+    background-color: $main_background_color;
+}
+.wrapper {
+    @include Border_solid;
+    min-width: 400px;
+    min-height: 500px;
+    background: url(../img/bg-img.png)  no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 55px 70px 55px 70px;
+}
+.wrapper:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    background: linear-gradient(45deg,$first_gradient_color, $second_gradient_color);
+    opacity: 0.85;
+}
+.select-legend {
+    position: relative;
+    z-index: 3;
+}
+.select-legend__list {
+    display: flex;
+    list-style: none;
+    margin-bottom: 50px;
+}
+.select-legend__items {
+    @include font_form;
+    padding-bottom: 4px;
+}
+.select-legend__a {
+    text-decoration: none;
+    margin-right: 26px;
+    border-bottom: 2px solid transparent;
+}
+.select-legend__a--checked {
+    border-bottom: 2px solid $border_select_color;
+}
+.select-legend__a--not-checked {
+    color: $text_color_not_active;
+}
+.select-legend__a--not-checked:hover{
+    transition: 0.5s ease-in ;
+    border-color: $border_select_color;
+    color: $text_color;
+}
+.select-legend__a--checked:hover {
+    border-color: transparent;
+}
+
+.main-form {
+    position: relative;
+    z-index: 3;
+}
+.main-form__label {
+    margin-bottom: 10px;
+    @include font_form;
+}
+.main-form__input-fields-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+.main-form__input {
+    @include font_form;
+    color: $text_color;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #a188c9;  
+}       
+.main-form__checkbox-wrapper {
+    @include font_form;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 3;
+}
+
+input[type="checkbox"]:checked
+{
+ display: none;
+}
+
+input[type="checkbox"]:checked + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 17px;
+    height: 17px;
+    background-color: $background_color_button;
+}
+
+input[type="checkbox"]:checked + label:before {
+    border-radius: 2px;
+}
+input[type="checkbox"]:checked + label:after {
+    content: "";
+    position: absolute;
+    transition: all 0.2s ease;
+    z-index: 5;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid $main_background_color;
+    border-bottom: 4px solid $main_background_color;
+    transform: rotate(-45deg);
+}
+
+input[type="radio"]:checked + label:after {
+    left: 5px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: $background_color_button;
+}
+
+input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+.main-form__btn-wrapper {
+    background-color: $background_color_button;
+    display: block;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.main-form__btn-wrapper {
+    border: 2px solid transparent;
+}
+button {
+    color: $text_color;
+    font-size: $Font_size_bold;
+    font-family: $Quicksand_Bold;
+    border: none;
+    background-color: $background_color_button;
+    
+}
+.main-form__btn-wrapper:hover {
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: 2px solid $border_select_color;
+}
+.bottom-part {
+    padding-top: 33px;
+    position: relative;
+    z-index: 3;
+}
+.bottom-part__list {
+    display: flex;
+    list-style: none;
+}
+.bottom-part__list--items-a {
+    color: $text_color_bottom_part;
+    font-family: $Quicksand_Regular;
+    font-size: $Font_size_regular;
+    
+}
+.bottom-part__list--items-a:first-child {
+    margin-right: 28px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Form</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="select-legend">
+		<ul class="select-legend__list">
+			<li class="select-legend__items">
+				<a href="#" class="select-legend__a select-legend__a--checked" > Sign in</a>
+			</li>
+			<li class="select-legend__items">
+				<a href="#" class="select-legend__a select-legend__a--not-checked">Join us</a>
+			</li>
+		</ul>
+	</div>
+<section class="main-form">
+	<form action="#" method="post">
+		<div class="main-form__input-fields-wrapper">
+			<label class="main-form__label">Username</label>
+			<input class="main-form__input" type="text" name="user_name"title ="Enter your username">
+		</div>
+		<div class="main-form__input-fields-wrapper">
+			<label class="main-form__label">Password</label>
+			<input class="main-form__input" type="text" name="user_password" pattern="" title="Use numbers from 0 to 9">
+		</div>
+		<div class="main-form__checkbox-wrapper">
+			<input class="main-form__checkbox" type="checkbox" name="" id="" checked>
+			<label class="main-form__label--checkbox">
+				<span> Keep me signed in </span>
+			</label>	
+		</div>
+		<div class="main-form__btn-wrapper">
+			<button type="submit"><span>Sign in</span></button>
+		</div>
+	</form>
+</section>
+<section class="bottom-part">
+	<ul class="bottom-part__list">
+		<li class="bottom-part__list--items" >
+			<a href="#" class="bottom-part__list--items-a"  > Forgot password</a>
+		</li>
+		<li class="bottom-part__list--items" >
+			<a href="#" class="bottom-part__list--items-a" >Create an account</a>
+		</li>
+	</ul>
+</section>
+</div>
+	<script src="js/bundle.js"></script>
+</body>
+</html>
