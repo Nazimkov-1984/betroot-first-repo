@@ -19,28 +19,24 @@
 			</li>
 		</ul>
 	</div>
-<section class="main-form">
+<div class="main-form">
 	<form action="#" method="post">
 		<div class="main-form__input-fields-wrapper">
-			<label class="main-form__label" for="">Username</label>
-			<input class="main-form__input" type="text"  name="user_name" id="" title ="Enter your username">
+			<label class="main-form__label">Username</label>
+			<input class="main-form__input" type="text" name="user_name" title = "Enter your username" placeholder=" " required pattern="[a-z]{3,20}">
 		</div>
 		<div class="main-form__input-fields-wrapper">
-			<label for="" class="main-form__label">Password</label>
-			<input class="main-form__input" type="text" name="user_password" id="" pattern="" title="Use numbers from 0 to 9">
+			<label class="main-form__label">Password</label>
+			<input class="main-form__input" type="text" name="user_password" required pattern="[0-9]{3,12}" title="Use numbers from 0 to 9, password length from 3 to 12 digits" placeholder=" " >
 		</div>
 		<div class="main-form__checkbox-wrapper">
-			<input class="main-form__checkbox" type="checkbox" name="" id="" checked>
-			<label class="main-form__label--checkbox" for="">
-				<span> Keep me signed in </span>
-			</label>	
-		</div>
-		<div class="main-form__btn-wrapper">
-			<button type="submit"><span>Sign in</span></button>
-		</div>
+			<input type="checkbox" id="checkbox_1" checked>
+			<label for="checkbox_1">Keep me signed in</label>
+		</div>  
+		<button class="main-form__btn" type="submit"><span>Sign in</span></button>
 	</form>
-</section>
-<section class="bottom-part">
+</div>
+<div class="bottom-part">
 	<ul class="bottom-part__list">
 		<li class="bottom-part__list--items" >
 			<a href="#" class="bottom-part__list--items-a"  > Forgot password</a>
@@ -49,7 +45,7 @@
 			<a href="#" class="bottom-part__list--items-a" >Create an account</a>
 		</li>
 	</ul>
-</section>
+</div>
 </div>
 	<script src="js/bundle.js"></script>
 </body>
