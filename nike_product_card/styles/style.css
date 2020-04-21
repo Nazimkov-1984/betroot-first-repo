@@ -122,6 +122,7 @@ body {
 .right-block {
     position: relative;
     padding-left: 80px;
+    padding-top: 54px;
     font-family: MuseoSasnsRounded100 ;
 }
 /*TEXT STYLES*/
@@ -129,27 +130,21 @@ body {
   padding-right: 32px;
 }
 .main-title {
-    display: block;
+    width: 155px;
     color: #e1e1e1;
     font-size: 18px;
-    padding-top: 54px;
-}
-.main-title-2 {
-    display: block;
-    color: #e1e1e1;
-    font-size: 18px;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
 }
 .main-subtitle {
     color:#49505a;
     font-size: 10px;
+    padding-bottom: 26px ;
 } /*END TEXT STYLES*/
 
  /*STARS DECORATION*/
 .stars {
     width: 65px;
     padding-bottom: 26px;
-    padding-top: 26px;
 }
 .list-star {
     position: relative;
