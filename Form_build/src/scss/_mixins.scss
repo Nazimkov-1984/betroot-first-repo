@@ -1,0 +1,14 @@
+@mixin Border_solid {
+    border: 1px solid red;
+}
+@mixin Flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+@mixin font_form {
+    font-size:$Font_size_regular ;
+    font-family: $Quicksand_Regular;
+    color: $text_color;
+}
