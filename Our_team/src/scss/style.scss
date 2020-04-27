@@ -8,9 +8,14 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+.header {
+    padding-top: 106px;
+    padding-top: 36px;
+}
 .main-text {
 flex-direction: column;
-padding-top: 108px;
+text-align: center;
 }
 .main-text__subtitle {
  letter-spacing: 1px ;
@@ -33,7 +38,6 @@ padding-top: 108px;
     @include flex_center;
      overflow: hidden;
      width: 450px;
-     padding-top: 36px;
      margin-bottom: 40px; 
  }
  .top-decoration:before,
@@ -111,7 +115,7 @@ padding-top: 108px;
  .left-part__border-foto:focus:after {
      width: 0%; 
  } /* END BORDER FOTO*/
- .foto-member-team {
+ .left-part__foto-member-team {
      border: 1px solid $color_main_title;
      z-index: 2;
      position: relative;
@@ -144,11 +148,12 @@ padding-top: 108px;
   font-size: $text_size_second_subtitle;
   color: $color_other_text;
   text-align: center;
-  padding-bottom: 33px;
+  margin-bottom: 33px;
 }
 .right-part__icon {
     @include flex_center;
-    padding-bottom: 33px ;
+    margin-bottom: 33px ;
+   
 }
 .right-part__icon__icon-items {
     display: flex;
@@ -176,20 +181,20 @@ padding-top: 108px;
     line-height: 1;
 }
 .right-part__main-text__hr {
-    padding-bottom: 24px;
-    padding-top: 6px;
+    margin-bottom: 24px;
+    margin-top: 6px;
 }
 .right-card__button {
     @include flex_center;
     width: 120px;
     height: 24px;
-    padding: 8px 13px 8px 13px ;
     font-family: $Open_Sans_Bold ;
     font-weight: $Open_Sans_Bold_wght;
     font-size: $text_size_button;
     color: $color_other_text;
     border: 1px solid $color_main_title;
     letter-spacing: -0.7px;
+    background-color: transparent;
 }
 .right-card__button:hover {
     cursor: pointer;
@@ -204,12 +209,24 @@ padding-top: 108px;
 }
 .pagination {
     padding-top: 40px;
+    padding-bottom: 94px;
     @include flex_center;
-    list-style-type: none;
 }
 .pagination__items {
     margin-right: 10px;
+    width: 11px;
+    height: 11px;
+    background-color: $color_main_title;
+    border-radius: 50%;
+   
 }
-.pagination__items:last-child {
+.pagination:last-child {
     margin-right: 0px;
+}
+.pagination__items:nth-child(2) {
+    border-radius: 50%;
+    border: 1px solid $color_main_title;
+    background-color: transparent;
+    width: 13px;
+    height: 13px;
 }
