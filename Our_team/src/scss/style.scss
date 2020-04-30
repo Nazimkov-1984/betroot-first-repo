@@ -8,11 +8,6 @@ body {
     align-items: center;
     flex-direction: column;
 }
-
-.header {
-    padding-top: 106px;
-    padding-top: 36px;
-}
 .main-text {
 flex-direction: column;
 text-align: center;
@@ -57,9 +52,17 @@ text-align: center;
  .top-decoration:after {
      margin-right:-100% ;
  } /* END TOP DECORATION STYLES*/ 
- 
+ .part-wrapper {
+     @include flex_center;
+     margin-bottom: 40px;
+     margin-right: 45px;
+ }
  .card-team-member {
      @include flex_center;
+     flex-direction: column;
+     padding-top: 112px;
+     padding-bottom: 94px;
+
  }
  /*LEFT PART*/
  .left-part {
@@ -71,9 +74,12 @@ text-align: center;
  }
  .left-part__arrow-left {
      margin-right: 45px;
+     transition: .5s;
  }
  .left-part__arrow-left:hover {
      cursor: pointer;
+     transform: scale(2);
+    filter: sepia(100%);
  }
  .left-part__border-foto{ /*BORDER FOTO*/
     display: inline-block;
@@ -202,14 +208,14 @@ text-align: center;
     transition: all .7s ;
 }
 .right-part__arrow-right {
-    padding-left: 45px;
+    transition: all .5s ;
 }
 .right-part__arrow-right:hover {
     cursor: pointer;
+    transform: scale(2);
+    filter: sepia(100%);
 }
 .pagination {
-    padding-top: 40px;
-    padding-bottom: 94px;
     @include flex_center;
 }
 .pagination__items {
@@ -220,7 +226,7 @@ text-align: center;
     border-radius: 50%;
    
 }
-.pagination:last-child {
+.pagination__items:last-child {
     margin-right: 0px;
 }
 .pagination__items:nth-child(2) {
