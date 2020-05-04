@@ -18,7 +18,7 @@ text-align: center;
  font-weight: $RaleWay_Medium_wght;
  font-size: $text_size_sublilte;
  color: $color_other_text;
- padding-bottom: 10px;
+ margin-bottom: 10px;
 }
  .main-text__title {
      font-family: $Roboto_Black;
@@ -201,6 +201,10 @@ text-align: center;
     border: 1px solid $color_main_title;
     letter-spacing: -0.7px;
     background-color: transparent;
+}
+.right-card__button a {
+    text-decoration: none;
+    color: inherit;
 }
 .right-card__button:hover {
     cursor: pointer;
