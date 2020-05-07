@@ -1,0 +1,16 @@
+.footer {
+    background-color: $color_background-footer;
+}
+.footer__text {
+    @include Raleway_Light_16;
+    color:$font_color_light;
+}
+.footer__autor {
+    @include Raleway_Light_15;
+    color:$font_color_light;  
+}
+.footer_autor-link  {
+    font-weight: $font_wight_bold;
+    color: $font_color_red;
+    text-decoration: none;
+}

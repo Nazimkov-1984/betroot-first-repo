@@ -1,0 +1,52 @@
+.header {
+    background: url(../img/header/header_background_img.png) no-repeat center top;
+    background-size: cover;
+    padding-top: 50px ;
+    padding-bottom:68px ;
+}
+.header__nav {
+    display: flex;
+}
+.header__nav__items {
+    text-transform: uppercase;
+    font-family: $Raleway;
+    color: $font_color_dark;
+    font-weight: $font_wight_bold;
+    margin-right: 38px;
+    text-decoration: none;
+    transition: all 0.5s;
+    border-top: 2px solid transparent;
+    padding-top: 9px;
+}
+.header__nav:last-child {
+    margin-right: 0px;
+}
+.header__nav__items:hover {
+    border-top: 2px solid $color_top_line;
+}
+.header__title  {
+    @include Raleway_Heavy_60;
+    color: $font_color_dark;
+    margin-top: 258px;
+    margin-bottom: 34px;
+}
+.header__text {
+    @include Raleway_Light_17;
+    color: $font_color_dark; 
+    margin-bottom: 30px;
+}
+.header__button {
+    background-color: $color_button_header;
+    color: $font_color_light;
+    @include Button_style;
+    margin-bottom: 295px ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.header__button:hover {
+    @include Button_hover;
+}
+.header__scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

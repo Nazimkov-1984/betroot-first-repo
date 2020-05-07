@@ -1,0 +1,8 @@
+.contact__title  {
+    @include Raleway_Bold_90;
+    color:$font_color_dark;
+}
+.contact__text {
+    @include Raleway_Light_17;
+    color:$font_color_dark;
+}

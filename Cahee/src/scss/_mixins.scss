@@ -1,0 +1,68 @@
+/* FONTS */ 
+@mixin Raleway_Bold_15 {
+    font-family: $Raleway;
+    font-size: 15px;
+    font-weight: 700;
+}
+@mixin Raleway_Bold_16 {
+    font-family: $Raleway;
+    font-size: 16px;
+    font-weight: 700;
+}
+@mixin Raleway_Bold_20 {
+    font-family: $Raleway;
+    font-size: 20px;
+    font-weight: 700;
+}
+@mixin Raleway_Bold_40 {
+    font-family: $Raleway;
+    font-size: 40px;
+    font-weight: 700;
+}
+@mixin Raleway_Bold_90 {
+    font-family: $Raleway;
+    font-size: 90px;
+    font-weight: 700;
+}
+@mixin Raleway_Heavy_60 {
+    font-family: $Raleway;
+    font-size: 60px;
+    font-weight: 900;
+}
+@mixin Raleway_Light_15 {
+    font-family: $Raleway;
+    font-size: 15px;
+    font-weight: 300;
+}
+@mixin Raleway_Light_16 {
+    font-family: $Raleway;
+    font-size: 16px;
+    font-weight: 300;
+}
+@mixin Raleway_Light_17 {
+    font-family: $Raleway;
+    font-size: 17px;
+    font-weight: 300;
+}
+@mixin Raleway_Light_20 {
+    font-family: $Raleway;
+    font-size: 20px;
+    font-weight: 300;
+}
+@mixin Button_style {
+    width: 200px;
+    height: 54px;
+    @include  Raleway_Light_20;
+    color: $font_color_light;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: none;
+    border-radius: 1px; 
+}
+@mixin Button_hover {
+        border-color: $color_hover_button;
+        cursor: pointer;
+}

@@ -1,0 +1,38 @@
+.gallery {
+    background-color: $color_background_gallery;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+.gallery__title  {
+    @include Raleway_Bold_90;
+    color: $font_color_dark;
+    margin-bottom: 30px;
+}
+.gallery__text {
+    text-align: center;
+    @include Raleway_Light_17;
+    color: $font_color_dark;
+    margin-bottom: 46px;
+}
+.gallery__button {
+    background-color:$color_button_gallery ;
+    @include Button_style;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.gallery__button:hover {
+    @include Button_hover;
+}
+.gallery__img {
+   max-width: 100%; 
+   max-height: 100%;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.gallery__first-line-img {
+    margin-bottom: 25px;
+}
+.gallery__img__chernika {
+    margin-bottom: 25px;
+}
+.gallery__second-line-img {
+ margin-bottom: 50px;
+}
